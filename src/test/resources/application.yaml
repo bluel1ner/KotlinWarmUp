@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  ai:
+    openai:
+      chat:
+        api-key: ${SPRING_AI_OPENAI_API_KEY}
+      options:
+        temperature: 1
+        model: gpt-4o-mini
