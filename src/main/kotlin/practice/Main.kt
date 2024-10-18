@@ -1,5 +1,6 @@
 package practice
 
+import practice.model.InitOrderDemo
 import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
 
 data class Request(
@@ -8,8 +9,9 @@ data class Request(
 )
 
 fun main(args: Array<String>) {
-    collectionPractice()
-    println(defineTypeOfObj(Request("test", 100)))
+    test()
+//    collectionPractice()
+//    println(defineTypeOfObj(Request("test", 100)))
 }
 
 
@@ -52,4 +54,8 @@ fun defineTypeOfObj(obj: Any): String {
         is String -> "String"
         else -> "cannot define type"
     }
+}
+
+fun test() {
+    val order : InitOrderDemo = InitOrderDemo("Ilya")
 }
