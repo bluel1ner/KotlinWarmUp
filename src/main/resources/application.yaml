@@ -1,6 +1,14 @@
 server:
   port: 8080
 
+openai:
+  url: https://api.openai.com/v1/chat/completions
+  key: ${SPRING_AI_OPENAI_API_KEY}
+  model: gpt-4o
+  config:
+    max-tokens: 1512
+    temperature: 1
+
 spring:
   ai:
     openai:
