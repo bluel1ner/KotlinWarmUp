@@ -26,13 +26,15 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.0")
+	implementation("org.apache.pdfbox:pdfbox:2.0.29")
+	implementation("org.slf4j:slf4j-api:2.0.9")
 	implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
 	implementation(platform("org.springframework.ai:spring-ai-bom:1.0.0-SNAPSHOT"))
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 kotlin {
