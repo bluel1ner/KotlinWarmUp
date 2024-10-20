@@ -12,7 +12,7 @@ import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 @SpringBootTest
-class SpringBootWithKotlinApplicationTests {
+class JokeServiceTest {
 
     @Autowired
     private lateinit var jokeService: JokeService

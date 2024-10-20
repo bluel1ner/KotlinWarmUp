@@ -33,7 +33,6 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
 	implementation(platform("org.springframework.ai:spring-ai-bom:1.0.0-SNAPSHOT"))
-	compileOnly("org.projectlombok:lombok:1.18.30")
 }
 
 kotlin {
