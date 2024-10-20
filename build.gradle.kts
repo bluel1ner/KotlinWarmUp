@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.blueliner"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0"
 
 java {
 	toolchain {
@@ -16,6 +16,12 @@ java {
 
 repositories {
 	mavenCentral()
+	maven {
+		url = uri("https://repo.spring.io/milestone")
+	}
+	maven {
+		url = uri("https://repo.spring.io/snapshot")
+	}
 }
 
 dependencies {
@@ -25,6 +31,8 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
+	implementation(platform("org.springframework.ai:spring-ai-bom:1.0.0-SNAPSHOT"))
 }
 
 kotlin {

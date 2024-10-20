@@ -1,1 +1,17 @@
-spring.application.name=spring-boot-with-kotlin
+server:
+  port: 8080
+
+spring:
+  ai:
+    openai:
+      chat:
+        api-key: ${SPRING_AI_OPENAI_API_KEY}
+        options:
+          temperature: 1
+          model: gpt-4o-mini
+    retry:
+      max-attempts: 3
+      backoff:
+        initial-interval: 1500
+        multiplier: 2
+      on-client-errors: false # use retry even status is 4xx. Don't use it because of the request limit policy
