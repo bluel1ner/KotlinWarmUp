@@ -1,9 +1,13 @@
 package org.blueliner.springbootwithkotlin.dto.request
 
+import com.fasterxml.jackson.annotation.JsonProperty
+
 data class OpenAiRequest (
     val model: String,
-    val max_tokens: Int,
+    @JsonProperty("max_tokens")
+    val maxTokens: Int,
     val temperature: Double,
     val messages: List<MessageDto>,
-    val response_format: Map<String, String>
+    @JsonProperty("response_format")
+    val responseFormat: Map<String, String>
 )
