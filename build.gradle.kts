@@ -32,6 +32,7 @@ dependencies {
 	implementation("org.slf4j:slf4j-api:2.0.9")
 	implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
 	implementation(platform("org.springframework.ai:spring-ai-bom:1.0.0-SNAPSHOT"))
+	implementation ("io.temporal:temporal-sdk:1.20.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
