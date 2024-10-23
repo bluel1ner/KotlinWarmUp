@@ -15,5 +15,5 @@ openai:
   key: ${SPRING_AI_OPENAI_API_KEY}
   model: gpt-4o
   config:
-    max-tokens: 1512
+    maxTokens: 1512
     temperature: 1

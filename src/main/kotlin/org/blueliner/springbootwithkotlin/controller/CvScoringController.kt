@@ -1,5 +1,6 @@
 package org.blueliner.springbootwithkotlin.controller
 
+import org.blueliner.springbootwithkotlin.config.AiModelProperties
 import org.blueliner.springbootwithkotlin.dto.response.CvScoringBySectionResponse
 import org.blueliner.springbootwithkotlin.dto.response.CvScoringResponse
 import org.blueliner.springbootwithkotlin.service.CvScoringService
