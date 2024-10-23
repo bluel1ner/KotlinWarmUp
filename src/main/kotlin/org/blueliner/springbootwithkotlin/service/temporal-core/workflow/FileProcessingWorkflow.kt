@@ -1,4 +1,4 @@
-package org.blueliner.springbootwithkotlin.service.temporal.workflow
+package org.blueliner.springbootwithkotlin.service.`temporal-core`.workflow
 
 import io.temporal.workflow.WorkflowInterface
 import io.temporal.workflow.WorkflowMethod

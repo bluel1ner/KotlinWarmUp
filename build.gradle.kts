@@ -36,6 +36,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	testImplementation ("io.temporal:temporal-testing:1.17.0")
+	implementation("io.temporal:temporal-spring-boot-starter:1.25.1")
+	implementation ("io.temporal:temporal-sdk:1.20.1")
 }
 
 kotlin {

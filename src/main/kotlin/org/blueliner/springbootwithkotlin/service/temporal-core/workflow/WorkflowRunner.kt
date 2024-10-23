@@ -1,4 +1,4 @@
-package org.blueliner.springbootwithkotlin.service.temporal.workflow
+package org.blueliner.springbootwithkotlin.service.`temporal-core`.workflow
 
 import io.temporal.api.common.v1.WorkflowExecution
 import io.temporal.api.enums.v1.WorkflowIdReusePolicy
