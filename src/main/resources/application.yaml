@@ -10,6 +10,12 @@ openai:
     temperature: 1
 
 spring:
+  temporal:
+    namespace: cv-analyzer-stage
+    connection:
+      target: 127.0.0.1:7233
+    workersAutoDiscovery:
+      packages: org.blueliner.springbootwithkotlin
   ai:
     openai:
       chat:
